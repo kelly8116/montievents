@@ -1,0 +1,32 @@
+{
+  "1759859531005331": {
+    "key": "Kirkwood - Jones County",
+    "id": "1759859531005331",
+    "url": "JonesCoKirkwood",
+    "color": "#005399"
+  },
+  "210409155652155": {
+    "key": "Monticello Public Library",
+    "id": "210409155652155",
+    "url": "monticellopubliclibraryiowa",
+    "color": "#000000"
+  },
+  "277426366025230": {
+    "key": "Monticello Parks & Rec",
+    "id": "277426366025230",
+    "url": "MonticelloParksRecreation",
+    "color": "#A0D482"
+  },
+  "199513883456124": {
+    "key": "Iowa State Extension Office",
+    "id": "199513883456124",
+    "url": "isueojones",
+    "color": "#C8102E"
+  },
+  "341002596283600": {
+    "key": "CoderDojo",
+    "id": "341002596283600",
+    "url": "coderdojomonticello",
+    "color": "blue"
+  }
+}
