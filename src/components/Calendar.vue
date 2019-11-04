@@ -167,7 +167,8 @@ export default {
           '/?ids=' + vm.entityIds,
           'GET',
           {
-            'access_token': 'EAAfZAzOyTTZCABAN9yiQnthSUerPC42Tb75ZBa4fb4fWmFdN5hKCRPEn71Y1QU5rGtx7Ps2hz5Ub1mke1pzwsj6EZAFcpq0gATZAnDFFnHFmPmOc6rk5PXdXoOewTaOCnVYMs2VExPBoOAVEgDxolM2AM8JnqyNWDhdaf067COCB941e8XxPDBYPyZCyBSTsz6TC2pCQQ0iQZDZD',
+            'access_token': 'EAAfZAzOyTTZCABAIZAaA0pZBnzaOsqnpOZCrWceiHGYltxwf8Wahtg8F8ZCPBvMbVpLU3tivqpJNiQ91QpDeSLvf2dIxKNyogUCWKBq3tBle4Dr5vRqELE8rgZC88k6h8l20CwlEOSl96CMeTh4gDp6AZBFZBy9HfjemLM09liCn87ZCLwZByN2ZBUawVPEhn5nSN0XBlPTKJD5wHgZDZD',
+            // 'access_token': 'EAAfZAzOyTTZCABAN9yiQnthSUerPC42Tb75ZBa4fb4fWmFdN5hKCRPEn71Y1QU5rGtx7Ps2hz5Ub1mke1pzwsj6EZAFcpq0gATZAnDFFnHFmPmOc6rk5PXdXoOewTaOCnVYMs2VExPBoOAVEgDxolM2AM8JnqyNWDhdaf067COCB941e8XxPDBYPyZCyBSTsz6TC2pCQQ0iQZDZD',
             'fields': fields
             // 'since': params
           },
