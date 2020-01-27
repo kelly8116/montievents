@@ -138,7 +138,7 @@ export default {
     // }
   },
   beforeMount () {
-    console.log('env', process.env.FB_ACCESS_TOKEN)
+    // console.log('env', process.env.FB_ACCESS_TOKEN)
     // this.getData()
     // console.log(this.entities)
     // this.calAttrs.push(this.entityObj)
@@ -175,6 +175,7 @@ export default {
           },
           function (response) {
             vm.groupData.push(response)
+            console.log('FB Initiated')
           }
         )
       }
