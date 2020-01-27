@@ -1,4 +1,5 @@
 'use strict'
 module.exports = {
-  NODE_ENV: '"production"'
+  NODE_ENV: '"production"',
+  FB_ACCESS_TOKEN: '"EAAfZAzOyTTZCABAE1GQZBmUaJVm21YVyPkQ8pmj3Gk9W6N0Cz2SmZBkNxKy5OpeY6RZBv66ZAgmzZBwvRpXtzZCjdaXKCFFJ1ZCJiNblZAihDnApzUwu4eghXTgfFwnWZBp7lZAfrqLTNEgzDcNAy8LKaVn3ggTr8K8R3UH1qh12yg6UwENROHBm4cGAAvo0SdGjVUokzkdUwfY5jAZDZD"'
 }
