@@ -55,7 +55,6 @@ export default {
       // js.src = "//connect.facebook.net/de_DE/sdk.js";
       js.src = 'https://connect.facebook.net/de_DE/sdk/debug.js'
       fjs.parentNode.insertBefore(js, fjs)
-      console.log('fb')
     }(document, 'script', 'facebook-jssdk'))
   },
   components: {

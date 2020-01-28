@@ -175,7 +175,7 @@ export default {
           },
           function (response) {
             vm.groupData.push(response)
-            console.log('FB Initiated')
+            console.log('FB Initiated', vm.groupData)
           }
         )
       }
