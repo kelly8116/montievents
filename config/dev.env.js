@@ -4,5 +4,5 @@ const prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
-  FB_ACCESS_TOKEN: '"2209799002607600|00ba2e9ebe8362bc257e6f67d0b53cee"'
+  FB_ACCESS_TOKEN: '"EAAfZAzOyTTZCABAN6AyGmAQDZAO2LIBrwDvcGWTe8SZCcgFVbStni1ch84ex2wgZC98w4otG1GECevrbprAcbASfm42yw5uvyulvcnqNLNkHBqiZCB4sZB8ZBTD6HjRP3N6TP05gVXZBZCweq0C1ZCfyLdAIpZAKKfx1n9QZD"'
 })
