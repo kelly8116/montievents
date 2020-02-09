@@ -8,7 +8,7 @@
             <div class="selected__desc" :style="{'border-color': attr.highlight.backgroundColor }" v-if="attr.highlight">
               {{ attr.customData.description }}
             </div>
-            <div class="selected__desc" :style="{'border-color': attr.bar.backgroundColor }" v-if="attr.dot">
+            <div class="selected__desc" :style="{'border-color': attr.bar.backgroundColor }" v-if="attr.bar">
               <div v-html="withBrTags(attr.customData.description)"></div>
               <p>
                 <a class="selected__link" :href="['https://www.facebook.com/' + attr.key]" target="_bank">
