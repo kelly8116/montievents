@@ -230,8 +230,22 @@ p a:hover {
 }
 .cards__li {
   display: flex;
-  flex: 0 0 33.3%;
+  flex: 0 0 100%;
   list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  .cards__li {
+    display: flex;
+    flex: 0 0 33.3%;
+    list-style-type: none;
+  }
+}
+@media screen and(min-width: 400px) and (max-width: 767px) {
+  .cards__li {
+    display: flex;
+    flex: 0 0 50%;
+    list-style-type: none;
+  }
 }
 .cards__inner {
   background: rgba(202, 204, 206, .45);
