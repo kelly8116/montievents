@@ -51,6 +51,7 @@ export default {
   },
   methods: {
     dayClicked (day) {
+      console.log('click', day)
       this.selectedDay = day
     },
     withBrTags: function (str) {

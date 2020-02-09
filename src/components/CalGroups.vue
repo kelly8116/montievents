@@ -1,5 +1,6 @@
 <template>
-  <div class="group" :class="{ 'is-active': isActive }" @click="groupToggle">
+  <!-- <div class="group" :class="{ 'is-active': isActive }" @click="groupToggle"> -->
+  <div class="group">
     <div class="checkbox" :style="{'background-color': color }">
       <span class="check"><font-awesome-icon icon="check"></font-awesome-icon></span>
     </div>
@@ -47,11 +48,11 @@ export default {
 <style scoped>
 .group {
   align-items: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   display: flex;
 }
 .checkbox {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   display: block;
   flex: 0 0 25px;
   height: 25px;

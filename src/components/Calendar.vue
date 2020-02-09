@@ -119,7 +119,7 @@ export default {
         label: 'Today'
       },
       customData: {
-        description: 'Hello from Today'
+        description: 'Today'
       }
     })
     // console.log(this.entities)
@@ -128,7 +128,7 @@ export default {
       // this.getData(obj)
     })
     this.entityIds = this.entityIds.join(', ')
-    console.log(this.entitiesJson)
+    // console.log(this.entitiesJson)
     this.getData()
     // console.log(this.entityIds)
 
@@ -175,7 +175,7 @@ export default {
           },
           function (response) {
             vm.groupData.push(response)
-            console.log('FB Initiated', vm.groupData)
+            // console.log('FB Initiated', vm.groupData)
           }
         )
       }
@@ -190,7 +190,7 @@ export default {
             this.calAttrs.push({
               key: events.data[i].id,
               dates: new Date(events.data[i].start_time),
-              bar: {
+              dot: {
                 backgroundColor: this.entitiesJson[group.id].color
               },
               popover: {
@@ -214,14 +214,14 @@ export default {
       //   },
       //   customData: 'Hello from today'
       // })
-      console.log(this.calAttrs)
+      // console.log(this.calAttrs)
       this.calKey = Math.random()
     }
   },
   watch: {
     groupData: function (newValue, oldValue) {
-      console.log('this was UPDATED!')
-      console.log(this.groupData)
+      // console.log('this was UPDATED!')
+      // console.log(this.groupData)
       this.setCalData()
       this.$forceUpdate()
     }
