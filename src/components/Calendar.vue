@@ -190,7 +190,7 @@ export default {
             this.calAttrs.push({
               key: events.data[i].id,
               dates: new Date(events.data[i].start_time),
-              dot: {
+              bar: {
                 backgroundColor: this.entitiesJson[group.id].color
               },
               popover: {
