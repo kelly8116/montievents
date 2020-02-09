@@ -252,6 +252,7 @@ p a:hover {
   border-top: 2px solid #084CA1;
   box-shadow: 2px 2px rgba(0, 0, 0, .125);
   display: flex;
+  flex: 1;
   flex-direction: column;
   line-height: 1.125em;
   margin: 10px;
