@@ -138,14 +138,11 @@ export default {
     // }
   },
   beforeMount () {
-    // console.log('env', process.env.FB_ACCESS_TOKEN)
-    // this.getData()
-    // console.log(this.entities)
-    // this.calAttrs.push(this.entityObj)
-    // console.log(this.calAttrs)
+    console.log('before mount')
   },
   mounted () {
     this.setCalData()
+    console.log('mounted')
   },
   methods: {
     // groupToggle: function (target) {
@@ -186,17 +183,17 @@ export default {
         let group = this.groupData[0][data]
         if (events) {
           for (let i = 0; i < events.data.length; i++) {
-            console.log(events)
             this.calAttrs.push({
               key: events.data[i].id,
               dates: new Date(events.data[i].start_time),
               bar: {
                 backgroundColor: this.entitiesJson[group.id].color
               },
-              popover: {
-                label: events.data[i].name
-              },
+              // popover: {
+              //   label: events.data[i].name
+              // },
               customData: {
+                group: this.groupData[0][data].name,
                 description: events.data[i].description
               }
             })
@@ -220,7 +217,7 @@ export default {
   },
   watch: {
     groupData: function (newValue, oldValue) {
-      // console.log('this was UPDATED!')
+      console.log('Watcher UPDATED!')
       // console.log(this.groupData)
       this.setCalData()
       this.$forceUpdate()

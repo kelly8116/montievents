@@ -56,6 +56,7 @@ export default {
       js.src = 'https://connect.facebook.net/de_DE/sdk/debug.js'
       fjs.parentNode.insertBefore(js, fjs)
     }(document, 'script', 'facebook-jssdk'))
+    console.log('FB connect')
   },
   components: {
     LogoSvg,

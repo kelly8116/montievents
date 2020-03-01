@@ -9,6 +9,7 @@
               {{ attr.customData.description }}
             </div>
             <div class="selected__desc" :style="{'border-color': attr.bar.backgroundColor }" v-if="attr.bar">
+              <h4>{{ attr.customData.group }}</h4>
               <div v-html="withBrTags(attr.customData.description)"></div>
               <p>
                 <a class="selected__link" :href="['https://www.facebook.com/' + attr.key]" target="_bank">
@@ -20,24 +21,6 @@
       </ul>
     </div>
   </div>
-  <!-- <v-calendar
-    :attributes="attrs"
-    :key="calKey"
-    is-expanded>
-    <div
-      slot="day-popover"
-      slot-scope="{ day, dayTitle, attributes }">
-      <div class="text-xs text-gray-300 font-semibold text-center">
-        {{ dayTitle }} abcd
-      </div>
-      <v-popover-row
-        v-for="attr in attributes"
-        :key="attr.key"
-        :attribute="attr">
-        {{ customData.description }}
-      </v-popover-row>
-    </div>
-  </v-calendar> -->
 </template>
 
 <script>
@@ -84,6 +67,9 @@ export default {
 .selected__desc p:last-child {
   margin-bottom: 0;
 }
+.selected-day {
+  word-break: break-all;
+}
 .c-title {
   color: #084CA1;
   font-family: 'Heebo', sans-serif;
@@ -99,5 +85,15 @@ export default {
   display: flex;
   height: 50px;
   justify-content: center;
+}
+.c-day-content-wrapper {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+h4 {
+  margin-top: 0;
 }
 </style>
