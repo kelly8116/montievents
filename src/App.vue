@@ -26,7 +26,7 @@
             <p class="copy">&copy; 2019 MontiEvents</p>
           </div>
           <div class="col col--1-3">
-            <p class="copy"><router-link to="/privacy-policy">Privacy Policy</router-link></p>
+            <p class="copy"><router-link to="/privacy-policy">Privacy Policy</router-link>&nbsp;&nbsp;<a href="mailto:montievents.iowa@gmail.com">montievents.iowa@gmail.com</a></p>
           </div>
         </div>
       </div>

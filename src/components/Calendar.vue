@@ -126,11 +126,8 @@ export default {
     //   this.getData(this.entities[k])
     // }
   },
-  beforeMount () {
-    console.log('before mount')
-  },
   mounted () {
-    // this.setCalData()
+    this.setCalData()
     console.log('mounted')
   },
   methods: {
@@ -189,11 +186,10 @@ export default {
             date.setUTCHours(dateArr[3])
             date.setUTCMinutes(dateArr[4])
             date.setUTCSeconds(dateArr[5])
-            console.log('date', events.data[i].start_time)
             this.calAttrs.push({
               key: events.data[i].id,
               dates: date,
-              highlight: {
+              bar: {
                 backgroundColor: this.entitiesJson[group.id].color
               },
               // popover: {
@@ -207,18 +203,6 @@ export default {
           }
         }
       }
-      // this.calAttrs.push({
-      //   key: 'Today',
-      //   dates: new Date(),
-      //   highlight: {
-      //     backgroundColor: '#fbecab'
-      //   },
-      //   popover: {
-      //     label: 'Today'
-      //   },
-      //   customData: 'Hello from today'
-      // })
-      console.log(this.calAttrs)
       this.calKey = Math.random()
     }
   },
