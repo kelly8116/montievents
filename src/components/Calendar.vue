@@ -187,14 +187,16 @@ export default {
           description: 'Today again'
         }
       })
+      console.log('this one', this.calAttrs[0].dates)
       for (let data in this.groupData[0]) {
         let events = this.groupData[0][data].events
         let group = this.groupData[0][data]
         if (events) {
           for (let i = 0; i < events.data.length; i++) {
+            console.log(events.data[i].start_time.toString())
             this.calAttrs.push({
               key: events.data[i].id,
-              dates: new Date(events.data[i].start_time),
+              dates: new Date(events.data[i].start_time.toString()),
               highlight: {
                 backgroundColor: this.entitiesJson[group.id].color
               },
