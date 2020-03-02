@@ -111,17 +111,6 @@ export default {
     }
   },
   created () {
-    this.calAttrs.push({
-      key: 'Today',
-      dates: new Date(),
-      highlight: {
-        backgroundColor: '#fbecab'
-      },
-      customData: {
-        group: '',
-        description: 'Today'
-      }
-    })
     // console.log(this.entities)
     _.each(this.entitiesJson, (obj, k) => {
       this.entityIds.push(obj.id)
@@ -166,9 +155,7 @@ export default {
           'GET',
           {
             'access_token': process.env.FB_ACCESS_TOKEN,
-            // 'access_token': 'EAAfZAzOyTTZCABAN9yiQnthSUerPC42Tb75ZBa4fb4fWmFdN5hKCRPEn71Y1QU5rGtx7Ps2hz5Ub1mke1pzwsj6EZAFcpq0gATZAnDFFnHFmPmOc6rk5PXdXoOewTaOCnVYMs2VExPBoOAVEgDxolM2AM8JnqyNWDhdaf067COCB941e8XxPDBYPyZCyBSTsz6TC2pCQQ0iQZDZD',
             'fields': fields
-            // 'since': params
           },
           function (response) {
             vm.groupData.push(response)
@@ -178,6 +165,17 @@ export default {
       }
     },
     setCalData: function () {
+      this.calAttrs.push({
+        key: 'Today',
+        dates: new Date(),
+        highlight: {
+          backgroundColor: '#fbecab'
+        },
+        customData: {
+          group: '',
+          description: 'Today'
+        }
+      })
       for (let data in this.groupData[0]) {
         let events = this.groupData[0][data].events
         let group = this.groupData[0][data]
@@ -186,7 +184,7 @@ export default {
             this.calAttrs.push({
               key: events.data[i].id,
               dates: new Date(events.data[i].start_time),
-              bar: {
+              highlight: {
                 backgroundColor: this.entitiesJson[group.id].color
               },
               // popover: {
