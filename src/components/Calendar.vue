@@ -176,6 +176,17 @@ export default {
           description: 'Today'
         }
       })
+      this.calAttrs.push({
+        key: 'Today',
+        dates: new Date(),
+        highlight: {
+          backgroundColor: '#adadad'
+        },
+        customData: {
+          group: '',
+          description: 'Today again'
+        }
+      })
       for (let data in this.groupData[0]) {
         let events = this.groupData[0][data].events
         let group = this.groupData[0][data]
