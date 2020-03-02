@@ -14,11 +14,7 @@ export default {
   methods: {
     scrollToEl: function (elId) {
       let el = document.getElementById(elId)
-      // el.scrollIntoView()
-      console.log(el)
       this.doScrolling(el, 1000)
-      // window.scrollTo(0, el.offsetTop)
-      // this.doScrolling(null, '#groups', 2000)
     },
     doScrolling: function (element, duration) {
       let startingY = window.pageYOffset
