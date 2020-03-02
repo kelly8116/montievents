@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import VCalendar from 'v-calendar'
-// import 'v-calendar/lib/v-calendar.min.css'
+import 'v-calendar/lib/v-calendar.min.css'
 import vueFb from './plugins/fb-sdk.js'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCheck, faGlobe, faMobileAlt } from '@fortawesome/free-solid-svg-icons'

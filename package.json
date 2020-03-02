@@ -21,7 +21,7 @@
     "dotenv-webpack": "^1.7.0",
     "facebook-api": "^0.1.2",
     "lodash": "^4.17.11",
-    "v-calendar": "^1.0.1",
+    "v-calendar": "^0.9.7",
     "vue": "^2.5.2"
   },
   "devDependencies": {

@@ -7,7 +7,9 @@
           <div id="calendar" class="container">
             <div class="row">
               <div class="col col--2-3">
-                <cal :attrs="calAttrs" :key="calKey"></cal>
+                <template v-if="calKey">
+                  <cal :attrs="calAttrs" :key="calKey"></cal>
+                </template>
                 <!-- <v-calendar
                   :attributes="calAttrs"
                   is-expanded>
@@ -98,7 +100,7 @@ export default {
   name: 'Calendar',
   data () {
     return {
-      calKey: '',
+      calKey: null,
       entitiesJson: Entities,
       entityIds: [],
       entityIndex: 1,
@@ -115,10 +117,8 @@ export default {
       highlight: {
         backgroundColor: '#fbecab'
       },
-      popover: {
-        label: 'Today'
-      },
       customData: {
+        group: '',
         description: 'Today'
       }
     })
@@ -211,13 +211,12 @@ export default {
       //   },
       //   customData: 'Hello from today'
       // })
-      // console.log(this.calAttrs)
+      console.log(this.calAttrs)
       this.calKey = Math.random()
     }
   },
   watch: {
     groupData: function (newValue, oldValue) {
-      console.log('Watcher UPDATED!')
       // console.log(this.groupData)
       this.setCalData()
       this.$forceUpdate()
