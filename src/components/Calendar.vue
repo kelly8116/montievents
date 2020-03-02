@@ -130,7 +130,7 @@ export default {
     console.log('before mount')
   },
   mounted () {
-    this.setCalData()
+    // this.setCalData()
     console.log('mounted')
   },
   methods: {
