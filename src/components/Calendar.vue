@@ -176,23 +176,12 @@ export default {
           description: 'Today'
         }
       })
-      this.calAttrs.push({
-        key: 'Today',
-        dates: new Date(),
-        highlight: {
-          backgroundColor: '#c3c3c3'
-        },
-        customData: {
-          group: '',
-          description: 'Today again'
-        }
-      })
       for (let data in this.groupData[0]) {
         let events = this.groupData[0][data].events
         let group = this.groupData[0][data]
         if (events) {
           for (let i = 0; i < events.data.length; i++) {
-            const dateArr = events.data[i].start_time.toString().split(/[- + :T]/)
+            const dateArr = events.data[i].start_time.split(/[- + :T]/)
             const date = new Date()
             date.setUTCFullYear(dateArr[0])
             date.setUTCMonth(dateArr[1] - 1)
@@ -200,7 +189,7 @@ export default {
             date.setUTCHours(dateArr[3])
             date.setUTCMinutes(dateArr[4])
             date.setUTCSeconds(dateArr[5])
-            console.log('date', date)
+            console.log('date', events.data[i].start_time)
             this.calAttrs.push({
               key: events.data[i].id,
               dates: date,
